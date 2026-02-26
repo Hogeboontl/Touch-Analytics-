@@ -30,7 +30,11 @@ This project uses **Firebase Realtime Database**. To run the project, you need:
 - A Firebase database URL configured in the backend code
 - A `firebase_service_key.json` file exported from your Firebase project
 
-> **Important:** User IDs in Firebase must **not be the integer `1`**. If `1` is used as a key, Firebase interprets it as a list instead of a dictionary, which will break the backend code. Use other integers (e.g., `2`, `123`) or string-based IDs.
+> **Important:** User IDs in Firebase must be integers **other than 1**. 
+> Using `1` causes Firebase to interpret the data as a list instead of a dictionary, 
+> which breaks the backend code. Any other integer (e.g., `2`, `123`) works correctly 
+> because Firebase treats them as dictionary keys, preserving the mapping between 
+> user IDs and their swipe data.
 
 ---
 
@@ -69,3 +73,4 @@ This prevents retraining the model for users already seen, and combined this fil
 - This project is primarily an educational demonstration, not a production-ready authentication system.
 - All features used in the backend are numeric and require consistent formatting in the Firebase database.
 - Ensure that the database structure remains consistent to avoid errors when reading data.
+
