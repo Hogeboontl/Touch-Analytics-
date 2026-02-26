@@ -40,13 +40,12 @@ This project uses **Firebase Realtime Database**. To run the project, you need:
 
 ### 2. Android App Frontend
 
-An Android app is included as a `.zip` file. When opened in **Android Studio**, it provides the frontend for the project. This frontend allows users to:
+An Android app is included as a `.zip` file. To use this, simply unzip the file and open the folder using android studio. This frontend allows users to:
 
 - Log in with a user ID
 - Perform swipe actions
 - Track swipe data associated with their login
 
-To use this, simply unzip the file and open the file using android studio.
 ---
 
 ### 3. Backend
@@ -73,4 +72,5 @@ This prevents retraining the model for users already seen, and combined this fil
 - This project is primarily an educational demonstration, not a production-ready authentication system.
 - All features used in the backend are numeric and require consistent formatting in the Firebase database.
 - Ensure that the database structure remains consistent to avoid errors when reading data.
+
 
